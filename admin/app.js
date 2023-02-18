@@ -12,6 +12,10 @@ const passport = require("passport");
 const fileUpload = require('express-fileupload')
 const path = require('path')
 
+
+app.use(express.static(path.join(__dirname, 'public')));
+app.set('views', path.join(__dirname, 'views'));
+
 app.use(
     fileUpload({
         useTempFiles: true,
@@ -47,7 +51,7 @@ app.use((req, res, next) => {
     next();
 })
 
-app.use(express.static("public"))
+
 
 app.use('/', require('./routes'));
 app.use('/category', require('./routes/category'));
