@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description"
+			content="tivo admin is super flexible, powerful, clean &amp; modern responsive bootstrap 5 admin template with unlimited possibilities.">
+		<meta name="keywords"
+			content="admin template, Tivo admin template, dashboard template, flat admin template, responsive admin template, web app">
+		<meta name="author" content="pixelstrap">
+		<link rel="icon" href="/assets/images/favicon/favicon.png" type="image/x-icon">
+		<link rel="shortcut icon" href="/assets/images/favicon/favicon.png" type="image/x-icon">
+		<title>HOME</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com/">
+		<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+			rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="/assets/css/vendors/font-awesome.css">
+		<!-- ico-font-->
+		<link rel="stylesheet" type="text/css" href="/assets/css/vendors/icofont.css">
+		<!-- Themify icon-->
+		<link rel="stylesheet" type="text/css" href="/assets/css/vendors/themify.css">
+		<!-- Flag icon-->
+		<link rel="stylesheet" type="text/css" href="/assets/css/vendors/flag-icon.css">
+		<!-- Feather icon-->
+		<link rel="stylesheet" type="text/css" href="/assets/css/vendors/feather-icon.css">
+		<link rel="stylesheet" type="text/css" href="/assets/css/vendors/scrollbar.css">
+		<link rel="stylesheet" type="text/css" href="/assets/css/vendors/animate.css">
+		<link rel="stylesheet" type="text/css" href="/assets/css/vendors/date-picker.css">
+		<link rel="stylesheet" type="text/css" href="/assets/css/vendors/owlcarousel.css">
+		<link rel="stylesheet" type="text/css" href="/assets/css/vendors/prism.css">
+		<!-- Bootstrap css-->
+		<link rel="stylesheet" type="text/css" href="/assets/css/vendors/bootstrap.css">
+		<!-- App css-->
+		<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+		<link id="color" rel="stylesheet" href="/assets/css/color-1.css" media="screen">
+		<!-- Responsive css-->
+		<link rel="stylesheet" type="text/css" href="/assets/css/responsive.css">
+		<script src="https://kit.fontawesome.com/720d275f39.js" crossorigin="anonymous"></script>
+	</head>
+
+	<body>
+		<!-- tap on top starts-->
+		<div class="tap-top"><i data-feather="chevrons-up"></i></div>
+		<!-- tap on tap ends-->
+		<!-- Loader starts-->
+		<div class="loader-wrapper">
+			<div class="dot"></div>
+			<div class="dot"></div>
+			<div class="dot"></div>
+			<div class="dot"> </div>
+			<div class="dot"></div>
+		</div>
+		<!-- Loader ends-->
+		<!-- page-wrapper Start-->
+		<div class="page-wrapper compact-wrapper" id="pageWrapper">
+			<!-- Page Header Start-->
+			<div class="page-header">
+				<div class="header-wrapper row m-0">
+					<form class="form-inline search-full col" action="#" method="get">
+						<div class="form-group w-100">
+							<div class="Typeahead Typeahead--twitterUsers">
+								<div class="u-posRelative">
+									<input class="demo-input Typeahead-input form-control-plaintext w-100" type="text"
+										placeholder="Search Tivo .." name="q" title="" autofocus>
+									<div class="spinner-border Typeahead-spinner" role="status"><span
+											class="sr-only">Loading...</span>
+									</div><i class="close-search" data-feather="x"></i>
+								</div>
+								<div class="Typeahead-menu"></div>
+							</div>
+						</div>
+					</form>
+					<div class="header-logo-wrapper col-auto p-0">
+						<div class="toggle-sidebar"><i class="status_toggle middle sidebar-toggle" data-feather="grid">
+							</i></div>
+						<div class="logo-header-main"><a href="index.html"><img class="img-fluid for-light img-100"
+									src="/assets/images/logo/logo2.png" alt=""><img class="img-fluid for-dark"
+									src="/assets/images/logo/logo.png" alt=""></a></div>
+					</div>
+					<div class="left-header col horizontal-wrapper ps-0">
+						<div class="left-menu-header">
+							<ul class="header-left">
+
+							</ul>
+						</div>
+					</div>
+					<div class="nav-right col-6 pull-right right-header p-0">
+						<ul class="nav-menus">
+
+							<li class="serchinput">
+								<div class="serchbox"><i data-feather="search"></i></div>
+								<div class="form-group search-form">
+									<input type="text" placeholder="Search here...">
+								</div>
+							</li>
+							<li>
+								<div class="mode"><i class="fa fa-moon-o"></i></div>
+							</li>
+
+							<li class="maximize"><a href="#!" onclick="javascript:toggleFullScreen()"><i
+										data-feather="maximize-2"></i></a></li>
+							<li class="profile-nav onhover-dropdown">
+								<div class="account-user"><i data-feather="user"></i></div>
+								<ul class="profile-dropdown onhover-show-div">
+									<li><a href="user-profile.html"><i data-feather="user"></i><span>Account</span></a>
+									</li>
+
+									<li><a href="/users/logout"><i data-feather="log-in"> </i><span>Log Out</span></a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- Page Header Ends-->
+			<!-- Page Body Start-->
+			<div class="page-body-wrapper">
+				<!-- Page Sidebar Start-->
+				<div class="sidebar-wrapper">
+					<div>
+						<div class="logo-wrapper">
+							<h5><a href="/dashboard" style="color: white">Kooke's ADMIN</a></h5>
+							<div class="back-btn"><i data-feather="grid"></i></div>
+							<div class="toggle-sidebar icon-box-sidebar"><i class="status_toggle middle sidebar-toggle"
+									data-feather="grid"> </i></div>
+						</div>
+						<div class="logo-icon-wrapper"><a href="index.html">
+								<div class="icon-box-sidebar"><i data-feather="grid"></i></div>
+							</a></div>
+						<nav class="sidebar-main">
+							<div class="left-arrow" id="left-arrow"><i data-feather="arrow-left"></i></div>
+							<div id="sidebar-menu">
+								<ul class="sidebar-links" id="simple-bar">
+									<li class="back-btn">
+										<div class="mobile-back text-end"><span>Back</span><i
+												class="fa fa-angle-right ps-2" aria-hidden="true"></i></div>
+									</li>
+									<li class="menu-box">
+										<ul>
+											<li class="sidebar-list">
+												<ul class="sidebar-submenu">
+													<li><a href="/dashboard">Home</a></li>
+													<br>
+													<h4 style="color: white;">Products</h4>
+													<li><a href="/product/all">All Products</a></li>
+													<li><a href="/product/add">Add Product</a></li>
+													<br>
+													<h4 style="color: white;">Categories</h4>
+													<li><a href="/category/all">All Categories</a></li>
+													<li><a href="/category/add">Add Category</a></li>
+													<br>
+													<h4 style="color: white;">Orders</h4>
+													<li><a href="/dashboard/orders">Current Orders</a></li>
+													<li><a href="/dashboard/all-orders">All Orders</a></li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							<div class="right-arrow" id="right-arrow"><i data-feather="arrow-right"></i></div>
+						</nav>
+					</div>
+				</div>
+				<!-- Page Sidebar Ends-->
+				<div class="page-body">
+					<div class="container-fluid">
+						<div class="page-title">
+							<div class="row">
+								<div class="col-sm-6">
+									<h3>Statastics</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Container-fluid starts-->
+					<div class="container-fluid dashboard-2">
+						<div class="row">
+							<div class="col-xl-12 col-md-12 box-col-12">
+								<div class="row">
+									<div class="col-lg-4 col-md-6 box-col-4">
+										<div class="card profit-card">
+											<div class="card-header pb-0">
+												<div class="d-flex justify-content-between">
+													<div class="flex-grow-1">
+														<p class="square-after f-w-600 header-text-primary">Our Total
+															Profit<i class="fa fa-circle"> </i></p>
+														<h4>$8,55,462</h4>
+													</div>
+												</div>
+											</div>
+											<div class="card-body">
+												<div class="d-flex">
+													<div class="flex-grow-1">
+														<div class="profit-wrapper header-text-primary icon-bg-primary">
+															<i class="fa fa-arrow-up"></i>
+														</div>
+														<!-- <h6 class="header-text-primary">79.21%</h6> -->
+														<!-- <p class="mb-0">More Than last month</p> -->
+													</div>
+												</div>
+												<div class="right-side icon-right-primary"><i class="fa fa-usd"></i>
+													<div class="shap-block">
+														<div class="rounded-shap animate-bg-primary"><i></i><i></i>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-6 box-col-4">
+										<div class="card visitor-card">
+											<div class="card-header pb-0">
+												<div class="d-flex justify-content-between">
+													<div class="flex-grow-1">
+														<p class="square-after f-w-600 header-text-info">Our Total
+															Visitor<i class="fa fa-circle"> </i></p>
+														<h4>
+															<%= orders.length %>
+														</h4>
+													</div>
+												</div>
+											</div>
+											<div class="card-body">
+												<div class="d-flex">
+													<div class="flex-grow-1">
+														<div class="profit-wrapper header-text-info icon-bg-info"><i
+																class="fa fa-arrow-up"></i>
+														</div>
+														<!-- <h6 class="header-text-info">86.94%</h6> -->
+														<!-- <p class="mb-0">More Than last month</p> -->
+													</div>
+												</div>
+												<div class="right-side icon-right-info"><i class="fa fa-user"></i>
+													<div class="shap-block">
+														<div class="rounded-shap animate-bg-primary"><i></i><i></i>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-12 box-col-4">
+										<div class="card sell-card">
+											<div class="card-header pb-0">
+												<div class="d-flex justify-content-between">
+													<div class="flex-grow-1">
+														<p class="square-after f-w-600 header-text-success">Our Total
+															Sold<i class="fa fa-circle"> </i></p>
+														<h4>
+															<%= ctr %>
+
+														</h4>
+													</div>
+												</div>
+											</div>
+											<div class="card-body">
+												<div class="d-flex">
+													<div class="flex-grow-1">
+														<div class="profit-wrapper header-text-success icon-bg-success">
+															<i class="fa fa-arrow-up"></i>
+														</div>
+														<h6 class="header-text-success">94.40%</h6>
+
+													</div>
+												</div>
+												<div class="right-side icon-right-success"><i
+														class="fa fa-shopping-basket"></i>
+													<div class="shap-block">
+														<div class="rounded-shap animate-bg-secondary"><i></i><i></i>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-12 col-md-12 box-col-12">
+										<div class="card best-seller">
+											<div class="card-header pb-0">
+												<div class="d-flex justify-content-between">
+													<div class="flex-grow-1">
+														<p class="square-after f-w-600">Our Total Sold<i
+																class="fa fa-circle"> </i></p>
+													</div>
+													<div class="setting-list">
+														<ul class="list-unstyled setting-option">
+															<li>
+																<div class="setting-light"><i
+																		class="icon-layout-grid2"></i></div>
+															</li>
+															<li><i class="view-html fa fa-code font-white"></i></li>
+															<li><i
+																	class="icofont icofont-maximize full-card font-white"></i>
+															</li>
+															<li><i
+																	class="icofont icofont-minus minimize-card font-white"></i>
+															</li>
+															<li><i
+																	class="icofont icofont-refresh reload-card font-white"></i>
+															</li>
+															<li><i class="icofont icofont-error close-card font-white">
+																</i></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="card-body pt-0">
+												<div class="table-responsive">
+													<table class="table table-bordernone">
+														<thead>
+															<tr>
+																<th class="f-26">Name</th>
+																<th>Email</th>
+																<th>Phone Number</th>
+																<th>Order</th>
+																<th>Total</th>
+																<th>Status</th>
+																<th>Table Number </th>
+															</tr>
+														</thead>
+														<tbody>
+															<% var ctr=0 %>
+
+																<% for(var i=0; i < orders.length; i++) { %>
+
+																	<tr>
+																		<td>
+																			<div class="d-flex align-items-center">
+																				<div class="flex-grow-1">
+																					<%= orders[i].name %>
+																				</div>
+																			</div>
+																		</td>
+																		<td>
+																			<%= orders[i].email %>
+																		</td>
+																		<td>
+																			<%= orders[i].phone_number %>
+																		</td>
+
+																		<td>
+																			<%
+																				orders[i].items.split(",").forEach(element=>
+																				{
+																				%>
+
+																				<p>
+																					<%= element %>
+																				</p>
+																				<% ctr++ %>
+
+																					<% }) %>
+
+																		</td>
+																		<td> <span>
+																				<%= orders[i].bill_amount %>
+																			</span></td>
+																		<td>
+																			<% if (orders[i].status=='Pending' ) { %>
+																				<span> <a href="#"
+																						style="color: red;">Pending</a></span>
+																				<% } else
+																					if(orders[i].status=='Completed' ) {
+																					%>
+																					<span> <a href="#"
+																							style="color: green;">Completed</a></span>
+																					<% } else
+																						if(orders[i].status=='Preparing'
+																						) { %>
+																						<span> <a href="#"
+																								style="color: grey;">Preparing</a></span>
+																						<% } else
+																							if(orders[i].status=='Rejected'
+																							) { %>
+																							<span> <a href="#"
+																									style="color: red;">Rejected</a></span>
+																							<% } %>
+																		</td>
+																		<td style="text-align: center;">
+																			<%= orders[i].table_number %>
+																		</td>
+
+																	</tr>
+																	<% } %>
+
+														</tbody>
+													</table>
+												</div>
+												<div class="code-box-copy">
+													<button class="code-box-copy__btn btn-clipboard"
+														data-clipboard-target="#sold-card"><i
+															class="icofont icofont-copy-alt"></i></button>
+													<pre><code class="language-html" id="sold-card"><div class="card best-seller">
+  <div class="card-header pb-0">
+    <div class="d-flex justify-content-between">
+      <div class="flex-grow-1">
+        <p class="square-after f-w-600"> Our Total Sold
+          <i class="fa fa-circle"></i>
+        </p>
+      </div>
+      <div class="setting-list">
+        <ul class="list-unstyled setting-option">
+          <li><div class="setting-light"><i class="icon-layout-grid2"></i></div></li>
+          <li><i class="view-html fa fa-code font-white"></i></li>
+          <li><i class="icofont icofont-maximize full-card font-white"></i></li>
+          <li><i class="icofont icofont-minus minimize-card font-white"></i></li>
+          <li><i class="icofont icofont-refresh reload-card font-white"></i></li>
+          <li><i class="icofont icofont-error close-card font-white"> </i></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="card-body pt-0">
+    <div class="table-responsive">
+      <table class="table table-bordernone">
+        <thead>
+          <tr>
+            <th class="f-26"> Best Seller
+            </th>
+            <th> Date </th>
+            <th> Product </th>
+            <th> Country </th>
+            <th> Total </th>
+            <th> Status </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="d-flex align-items-center">
+                <div class="flex-shrink-0">
+                  <img class="img-fluid" src="/assets/images/dashboard-2/dash-2/01.png" alt=""/>
+                </div>
+                <div class="flex-grow-1">
+                  <span class="f-14 f-w-600"> 
+                    <a href="user-profile.html"> Ossim keter</a> </span>
+                  <p class="mb-0"> 2022 </p>
+                </div>
+                <div class="active-status active-online"></div>
+              </div>
+            </td>
+            <td> 16 August </td>
+            <td> Clothes </td>
+            <td>
+              <i class="flag-icon flag-icon-gb"></i>
+            </td>
+            <td>
+              <span> $1,58,652 </span>
+            </td>
+            <td>
+              <span> Success </span>
+              <i class="fa fa-check-circle f-14"></i>
+            </td>
+            <td>
+              <span>
+                <a href="edit-profile.html"> Edit </a>
+              </span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="d-flex align-items-center">
+                <img class="img-fluid" src="/assets/images/dashboard-2/dash-2/02.png" alt=""/>
+                <div class="flex-grow-1">
+                  <span class="f-14 f-w-600"> <a href="user-profile.html">Venter loren</a> </span>
+                  <p class="mb-0"> 2021 </p>
+                </div>
+                <div class="active-status active-online"></div>
+              </div>
+            </td>
+            <td> 21 September </td>
+            <td> Branded Shoes </td>
+            <td>
+              <i class="flag-icon flag-icon-us"></i>
+            </td>
+            <td>
+              <span> $95,025 </span>
+            </td>
+            <td>
+              <span> Success </span>
+              <i class="fa fa-check-circle f-14"></i>
+            </td>
+            <td>
+              <span>
+                <a href="edit-profile.html"> Edit </a>
+              </span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="d-flex align-items-center">
+                <img class="img-fluid" src="/assets/images/dashboard-2/dash-2/03.png" alt=""/>
+                <div class="flex-grow-1">
+                  <span class="f-14 f-w-600"> <a href="user-profile.html"> Fran Loain </a> </span>
+                  <p class="mb-0"> 2022 </p>
+                </div>
+                <div class="active-status active-online"></div>
+              </div>
+            </td>
+            <td> 06 March </td>
+            <td> Electronics </td>
+            <td>
+              <i class="flag-icon flag-icon-za"></i>
+            </td>
+            <td>
+              <span> $90,155 </span>
+            </td>
+            <td>
+              <span> Success </span>
+              <i class="fa fa-check-circle f-14"></i>
+            </td>
+            <td>
+              <span>
+                <a href="edit-profile.html"> Edit </a>
+              </span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="d-flex align-items-center">
+                <img class="img-fluid" src="/assets/images/dashboard-2/dash-2/04.png" alt=""/>
+                <div class="flex-grow-1">
+                  <span class="f-14 f-w-600"> <a href="user-profile.html"> Loften Horen </a> </span>
+                  <p class="mb-0"> 2021 </p>
+                </div>
+                <div class="active-status active-online"></div>
+              </div>
+            </td>
+            <td> 12 February </td>
+            <td> Watch </td>
+            <td>
+              <i class="flag-icon flag-icon-at"></i>
+            </td>
+            <td>
+              <span> $80,658 </span>
+            </td>
+            <td>
+              <span> Success </span>
+              <i class="fa fa-check-circle f-14"></i>
+            </td>
+            <td>
+              <span>
+                <a href="edit-profile.html"> Edit </a>
+              </span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="d-flex align-items-center">
+                <img class="img-fluid" src="/assets/images/dashboard-2/dash-2/05.png" alt=""/>
+                <div class="flex-grow-1">
+                  <span class="f-14 f-w-600"> <a href="user-profile.html">Loie fenter </a> </span>
+                  <p class="mb-0"> 2022 </p>
+                </div>
+                <div class="active-status active-online"></div>
+              </div>
+            </td>
+            <td> 30 January </td>
+            <td> Jewellery </td>
+            <td>
+              <i class="flag-icon flag-icon-br"></i>
+            </td>
+            <td>
+              <span> $50,652 </span>
+            </td>
+            <td>
+              <span> Success </span>
+              <i class="fa fa-check-circle f-14"></i>
+            </td>
+            <td>
+              <span>
+                <a href="edit-profile.html"> Edit </a>
+              </span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div></code></pre>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<!-- Container-fluid Ends-->
+				</div>
+				<!-- footer start-->
+				<footer class="footer Fixed">
+					<div class=" container-fluid">
+						<div class="row">
+							<div class="col-md-6 p-0 footer-left">
+								<p class="mb-0"></p>
+							</div>
+							<div class="col-md-6 p-0 footer-right">
+								<p class="mb-0">Hand-crafted & made with <i class="fa fa-heart font-danger"> </i> by
+									Soham
+									Sahare</p>
+							</div>
+						</div>
+					</div>
+				</footer>
+			</div>
+		</div>
+		<!-- latest jquery-->
+		<script src="/assets/js/jquery-3.6.0.min.js"></script>
+		<!-- Bootstrap js-->
+		<script src="/assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+		<!-- feather icon js-->
+		<script src="/assets/js/icons/feather-icon/feather.min.js"></script>
+		<script src="/assets/js/icons/feather-icon/feather-icon.js"></script>
+		<!-- scrollbar js-->
+		<script src="/assets/js/scrollbar/simplebar.js"></script>
+		<script src="/assets/js/scrollbar/custom.js"></script>
+		<!-- Sidebar jquery-->
+		<script src="/assets/js/config.js"></script>
+		<script src="/assets/js/sidebar-menu.js"></script>
+		<script src="/assets/js/chart/knob/knob.min.js"></script>
+		<script src="/assets/js/chart/knob/knob-chart.js"></script>
+		<script src="/assets/js/chart/apex-chart/apex-chart.js"></script>
+		<script src="/assets/js/chart/apex-chart/stock-prices.js"></script>
+		<script src="/assets/js/prism/prism.min.js"></script>
+		<script src="/assets/js/clipboard/clipboard.min.js"></script>
+		<script src="/assets/js/custom-card/custom-card.js"></script>
+		<script src="/assets/js/notify/bootstrap-notify.min.js"></script>
+		<script src="/assets/js/datepicker/date-picker/datepicker.js"></script>
+		<script src="/assets/js/datepicker/date-picker/datepicker.en.js"></script>
+		<script src="/assets/js/datepicker/date-picker/datepicker.custom.js"></script>
+		<script src="/assets/js/owlcarousel/owl.carousel.js"></script>
+		<script src="/assets/js/typeahead/handlebars.js"></script>
+		<script src="/assets/js/typeahead/typeahead.bundle.js"></script>
+		<script src="/assets/js/typeahead/typeahead.custom.js"></script>
+		<script src="/assets/js/typeahead-search/handlebars.js"></script>
+		<script src="/assets/js/typeahead-search/typeahead-custom.js"></script>
+		<script src="/assets/js/dashboard/dashboard_2.js"></script>
+		<script src="/assets/js/datepicker/date-time-picker/tempusdominus-bootstrap-4.min.js"></script>
+		<!-- Template js-->
+		<script src="/assets/js/script.js"></script>
+		<!-- login js-->
+	</body>
+
+	<!-- Mirrored from admin.pixelstrap.com/tivo/template/dashboard-02.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 03 Feb 2023 08:34:45 GMT -->
+
+</html>
