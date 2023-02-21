@@ -1,6 +1,5 @@
 import React from 'react';
 import Collapse, { Panel } from 'rc-collapse';
-import collapseMotion from './utils/motion-util';
 
 type AccordionProps = {
   className?: string;
@@ -50,7 +49,6 @@ const Accordion: React.FC<AccordionProps> = ({ className, items = [] }) => (
     className={`accordion ${className}`.trim()}
     defaultActiveKey="active"
     expandIcon={expandIcon}
-    openMotion={collapseMotion}
   >
     {items.length !== 0 &&
       items.map((item) => {

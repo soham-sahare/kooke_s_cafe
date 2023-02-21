@@ -31,11 +31,11 @@ const ItemCard: React.FC<ItemCardProps> = ({ item, onClick }) => {
       </div>
 
       <div className={ItemCardContent}>
-      <span className={ItemCardPrice}>{item.name}</span>
-        <span className="text-15px">
+        <span className={ItemCardPrice}>
           {CURRENCY}
           {item.price}
         </span>
+        <span className="text-13px">{item.name}</span>
       </div>
     </div>
   );

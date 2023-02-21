@@ -105,7 +105,7 @@ export const ItemCardBase = 'w-full flex flex-col items-start cursor-pointer';
 export const ItemCardImage =
   'flex justify-center items-center w-full rounded overflow-hidden';
 export const ItemCardContent = 'flex flex-col items-start mt-3';
-export const ItemCardPrice = 'font-semibold text-gray-900 text-16px';
+export const ItemCardPrice = 'font-semibold text-gray-900 mb-2 text-16px';
 
 // ----------
 // SearchBox

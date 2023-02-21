@@ -29,7 +29,7 @@ const Search: React.FC<SearchProps> = ({ className, ...props }) => {
       </label> */}
       <input
         type="search"
-        placeholder="Search here"
+        placeholder="Search your menu items here"
         className={SearchInput}
         value={searchTerm}
         onChange={onSearch}

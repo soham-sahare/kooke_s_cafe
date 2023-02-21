@@ -116,11 +116,6 @@ button {
   -webkit-overflow-scrolling: touch;
 }
 
-.main-scrollbar {
-  max-height: 100vh;
-  -webkit-overflow-scrolling: touch;
-}
-
 .checkout-scrollbar {
   max-height: calc(100vh - 182px);
   -webkit-overflow-scrolling: touch;

@@ -5,7 +5,8 @@ const isObjectLiked = (value) =>
 
 const rehydrate = (value: any, defaultValue?: any) => {
   if (!value) return defaultValue;
-
+  // if (value === 'false') str = false;
+  // if (value === 'true') str = true;
   if (isObjectLiked(value)) {
     return value;
   }
@@ -44,7 +45,7 @@ const createMigration = (opts, data) => {
 };
 
 const config = {
-  key: '@session-kooke',
+  key: '@session-medsy',
   version: 1,
   migrate: (state) => {
     return { ...state };
@@ -62,7 +63,7 @@ export const useStorage = (state, setState) => {
           setRehydrated(true);
           return setError(err);
         }
-
+        // Migrate persisted data
         const restoredValue = rehydrate(value);
         if (typeof config.migrate === 'function') {
           createMigration(config, restoredValue)
@@ -78,6 +79,9 @@ export const useStorage = (state, setState) => {
   }, []);
 
   useEffect(() => {
+    // if (isNil(state) || isEmpty(state)) {
+    //   localForage.removeItem(config.key);
+    // }
     localForage.setItem(config.key, hydrate(state));
   }, [state]);
 

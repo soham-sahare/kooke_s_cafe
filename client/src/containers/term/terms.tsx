@@ -25,8 +25,8 @@ const TermsPageContent = () => {
             className="w-full md:w-1/3 lg:w-1/4 md:20px"
             style={{ flex: '0 0 auto' }}
           >
-            {/* <Sticky top={mobile ? 90 : 150} innerZ="1"> */}
-              <div className="w-full pr-4 py-2 md:py-0 bg-white text-gray-600">
+            <Sticky top={mobile ? 90 : 150} innerZ="1">
+              <div className="w-full pr-4 py-2 md:py-0 bg-white">
                 {menuItems.map((item, index) => (
                   <Link
                     key={index}
@@ -36,13 +36,13 @@ const TermsPageContent = () => {
                     smooth={true}
                     offset={-130}
                     duration={500}
-                    className="text-14px no-underline my-10px block capitalize cursor-pointer font-semibold hover:text-gray-900"
+                    className="text-14px no-underline text-gray-600 my-10px block capitalize cursor-pointer font-semibold hover:text-gray-900"
                   >
                     {item}
                   </Link>
                 ))}
               </div>
-            {/* </Sticky> */}
+            </Sticky>
           </div>
 
           <div className="w-full">

@@ -22,12 +22,13 @@ export default function CategoryCard({
   }
   return (
     <div
-      className={`p-4 flex flex-col border rounded-md text-center ${category === id ? 'border-gray-900' : ' border-gray-300'
-        }`}
+      className={`p-4 flex flex-col border rounded-md text-center ${
+        category === id ? 'border-gray-900' : ' border-gray-300'
+      }`}
       onClick={handleCategoryClick}
       role="button"
     >
-      <Image src={imageUrl} alt={name} width={308} height={308} unoptimized />
+      <Image src={imageUrl} alt={name} width={120} height={120} unoptimized />
       <p className="font-semibold text-gray-900 truncate">{name}</p>
     </div>
   );

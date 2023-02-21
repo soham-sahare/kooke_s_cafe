@@ -1,5 +1,7 @@
 module.exports = {
-  mode: 'jit',
+  future: {
+    removeDeprecatedGapUtilities: false,
+  },
   purge: ['./src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     screens: {

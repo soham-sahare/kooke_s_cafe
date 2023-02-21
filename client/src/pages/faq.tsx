@@ -6,27 +6,27 @@ import Accordion from 'components/accordion';
 const accordionData = [
   {
     id: 1,
-    title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    title: 'How to contact with Customer Service?',
     details:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Urna porttitor rhoncus dolor purus non enim praesent elementum facilisis. Eget duis at tellus at urna.'
+      'Our Customer Experience Team is available 6 days a week and we offer various ways to get in contact.Email and Chat. We try to reply quickly, so you need not to wait too long for a response!.',
   },
   {
     id: 2,
-    title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    title: 'App installation failed, how to update system information?',
     details:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Urna porttitor rhoncus dolor purus non enim praesent elementum facilisis. Eget duis at tellus at urna.'
+      'Please read the documentation carefully. We also have some online video tutorials regarding this issue . If the problem remains, Please Open a ticket in the support forum',
   },
   {
     id: 3,
-    title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    title: 'Website reponse taking time, how to improve?',
     details:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Urna porttitor rhoncus dolor purus non enim praesent elementum facilisis. Eget duis at tellus at urna.'
+      'At first, Please check your internet connection . We also have some online video tutorials regarding this issue . If the problem remains, Please Open a ticket in the support forum.',
   },
   {
     id: 4,
-    title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    title: 'How do I create a account?',
     details:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Urna porttitor rhoncus dolor purus non enim praesent elementum facilisis. Eget duis at tellus at urna.'
+      'If you want to open an account for personal use you can do it over the phone or online. Opening an account online should only take a few minutes.',
   },
 ];
 
@@ -39,7 +39,7 @@ export default function FAQ() {
           content="width=device-width, initial-scale=1, maximum-scale=1"
         />
         <meta name="Description" content="Put your description here." />
-        <title>Kooke's Cafe | F.A.Q</title>
+        <title>F.A.Q</title>
       </Head>
 
       <div className="py-35px px-0">

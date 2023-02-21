@@ -1,5 +1,5 @@
 async function createOrder(data) {
-  await fetch('http://localhost:5000/api/orders', {
+  await fetch('https://kookes-cafe-backend.vercel.app/api/orders', {
     headers: { 'Content-Type': 'application/json' },
     method: 'POST',
     mode: 'cors',

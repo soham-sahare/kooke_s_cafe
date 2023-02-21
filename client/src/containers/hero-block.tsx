@@ -14,19 +14,19 @@ const data = [
   },
   {
     id: 2,
-    image: DeliveryImg,
+    image: CouponImg,
     link: '#',
     title: 'Coupon savings',
   },
   {
     id: 3,
-    image: DeliveryImg,
+    image: OrderImg,
     link: '#',
     title: 'Custom order',
   },
   {
     id: 4,
-    image: DeliveryImg,
+    image: FemaleCareImg,
     link: '#',
     title: 'Female care',
   },

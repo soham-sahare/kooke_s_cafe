@@ -12,10 +12,7 @@ import { getCategories } from 'helpers/get-categories';
 import Categories from 'containers/categories';
 import { useCategory } from 'contexts/category/use-category';
 
-import { Scrollbar } from 'components/scrollbar';
-
-export default function Menu({ products, categories }) {
-
+export default function Home({ products, categories }) {
   const { elRef, scroll } = useRefScroll({
     percentOfElement: 0,
     percentOfContainer: 0,
@@ -28,24 +25,21 @@ export default function Menu({ products, categories }) {
   }, [searchTerm, category]);
 
   return (
-    <Scrollbar className="main-scrollbar flex-grow">
-      <Layout>
-        <Head>
-          <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, maximum-scale=1"
-          />
-          <meta name="Description" content="Put your description here." />
-          <title>Kooke's Cafe</title>
-        </Head>
-        {/* <HeroBlock /> */}
-        <CallToAction />
-        <HowItWorks />
-        <Categories data={categories} ref={elRef} />
-        <Products items={products} />
+    <Layout>
+      <Head>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1"
+        />
+        <meta name="Description" content="Put your description here." />
+        <title>Kooke's Cafe</title>
+      </Head>
 
-      </Layout>
-    </Scrollbar>
+      <CallToAction />
+      <HowItWorks />
+      <Categories data={categories} ref={elRef} />
+      <Products items={products} />
+    </Layout>
   );
 }
 

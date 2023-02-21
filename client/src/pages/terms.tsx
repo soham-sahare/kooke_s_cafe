@@ -12,7 +12,7 @@ export default function FAQ() {
           content="width=device-width, initial-scale=1, maximum-scale=1"
         />
         <meta name="Description" content="Put your description here." />
-        <title>Kooke's Cafe | Terms &amp; Condition</title>
+        <title>Terms &amp; Condition</title>
       </Head>
 
       <div className="px-0">

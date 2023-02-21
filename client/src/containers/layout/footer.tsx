@@ -58,7 +58,7 @@ const Footer = () => (
       Made with ❤️ by {' '}
       <a
         className="font-semibold transition-colors duration-200 ease-in-out hover:text-red-700"
-        href="http://sohamsahare.herokuapp.com/"
+        href="https://sohamsahare.vercel.app/"
         target="_blank"
       >
         Soham Sahare.
