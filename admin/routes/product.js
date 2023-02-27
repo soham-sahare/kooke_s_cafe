@@ -35,7 +35,7 @@ router.post('/add', ensureAuthenticated, async (req, res) => {
         const data = await new Products({
             id: uuidv4(),
             name: req.body.name,
-            image: "http://localhost:5001/" + 'uploads/product/' + fileName,
+            image: "https://admin-kooke-s-cafe.onrender.com/" + 'uploads/product/' + fileName,
             description: req.body.description,
             price: req.body.price,
             type: cat.name,
@@ -81,7 +81,7 @@ router.post('/edit/:id', ensureAuthenticated, async (req, res) => {
             await db.collection("products").updateOne({ id: req.params.id }, {
                 $set: {
                     name: req.body.name,
-                    image: "http://localhost:5001/" + 'uploads/product/' + fileName,
+                    image: "https://admin-kooke-s-cafe.onrender.com/" + 'uploads/product/' + fileName,
                     description: req.body.description,
                     price: req.body.price,
                     type: cat.name,

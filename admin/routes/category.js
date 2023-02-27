@@ -29,7 +29,7 @@ router.post('/add', ensureAuthenticated, async (req, res) => {
         const data = await new Categories({
             id: uuidv4(),
             name: req.body.name,
-            image_icon_url: "http://localhost:5001/" + 'uploads/category/' + fileName,
+            image_icon_url: "https://admin-kooke-s-cafe.onrender.com/" + 'uploads/category/' + fileName,
         })
 
         const dataToSave = await data.save();
@@ -60,7 +60,7 @@ router.post('/edit/:id', ensureAuthenticated, async (req, res) => {
         await file.mv(savePath)
         MongoClient.connect(process.env.DATABASE_URL, async function (err, db) {
             var db = db.db("kookes_Cafe")
-            await db.collection("categories").updateOne({ id: req.params.id }, { $set: { name: req.body.name, image_icon_url: "http://localhost:5001/" + 'uploads/category/' + fileName } })
+            await db.collection("categories").updateOne({ id: req.params.id }, { $set: { name: req.body.name, image_icon_url: "https://admin-kooke-s-cafe.onrender.com/" + 'uploads/category/' + fileName } })
             {
                 if (err) throw err;
                 db.close();
